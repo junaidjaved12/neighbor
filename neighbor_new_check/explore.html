@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Hero section  -->
+    <header class="bg_grad_listing">
+      <!-- Navbar  -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="nav_img" href="./index.html">
+            <img
+              class="img-fluid"
+              src="./assets/images/297e342163d49e74aac73046d98c485fca226d2e.png"
+              alt=""
+              srcset=""
+            />
+          </a>
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-line"></span>
+            <span class="toggler-line"></span>
+            <span class="toggler-line"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html"
+                  >Home<span class="yellow-dot"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./explore.html"
+                  >Explore<span class="yellow-dot"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blogs.html"
+                  >Blogs<span class="yellow-dot"></span
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html"
+                  >About Us<span class="yellow-dot"></span
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./contactus.html"
+                  >Contact<span class="yellow-dot"></span
+                ></a>
+              </li>
+            </ul>
+            <div class="ms-auto d-flex">
+              <button class="btn-add-listing" type="button">Add Listing</button>
+              <button class="btn-sign-in" type="button">Sign In</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="set_postion_top">
+        <img src="./assets/images/OJO4YQ0 1.png" class="" alt="" srcset="" />
+      </div>
+
+      <div class="set_postion_toys">
+        <img
+          src="./assets/images/image 11.png"
+          class="img-fluid toys_1"
+          alt=""
+          srcset=""
+        />
+        <!-- <img src="./assets/images/image 4.png" class="img-fluid toys_2" alt="" srcset=""> -->
+        <img
+          src="./assets/images/image 5.png"
+          class="img-fluid toys_3"
+          alt=""
+          srcset=""
+        />
+        <!-- <img src="./assets/images/image 8.png" class="img-fluid toys_33" alt="" srcset=""> -->
+      </div>
+      <div class="set_postion_toys">
+        <!-- <img src="./assets/images/image 3.png" class="img-fluid toys_4" alt="" srcset=""> -->
+        <img
+          src="./assets/images/image 12.png"
+          class="img-fluid toys_5"
+          alt=""
+          srcset=""
+        />
+        <img
+          src="./assets/images/image 13.png"
+          class="img-fluid toys_6"
+          alt=""
+          srcset=""
+        />
+        <!-- <img src="./assets/images/image 6.png" class="img-fluid toys_66" alt="" srcset=""> -->
+      </div>
+      <div class="set_postion_toys index_position">
+        <div class="about_us_check">
+          <span> Explore Everything </span>
+          <h1>Add a Listing</h1>
+          <h6>
+            Explore the best spots around you with ease. From cozy cafes and
+            buzzing nightlife to fitness hubs and scenic getaways, find
+            everything you need in one place.
+          </h6>
+        </div>
+      </div>
+
+      <div class="button_position">
+        <a
+          href="#"
+          class="text-decoration-none active-btn"
+          data-section="general"
+          onclick="showSection(this)"
+        >
+          <i class="fas fa-info-circle me-1"></i> General
+        </a>
+        <a
+          href="#"
+          class="text-decoration-none"
+          data-section="images"
+          onclick="showSection(this)"
+        >
+          <i class="fas fa-image me-1"></i> Images
+        </a>
+        <a
+          href="#"
+          class="text-decoration-none"
+          data-section="contact"
+          onclick="showSection(this)"
+        >
+          <i class="fas fa-envelope me-1"></i> Contact Information
+        </a>
+        <a
+          href="#"
+          class="text-decoration-none"
+          data-section="social"
+          onclick="showSection(this)"
+        >
+          <i class="fab fa-facebook-messenger me-1"></i> Social Networks
+        </a>
+        <a
+          href="#"
+          class="text-decoration-none"
+          data-section="working-hours"
+          onclick="showSection(this)"
+        >
+          <i class="fas fa-clock me-1"></i> Working Hours
+        </a>
+        <a
+          href="#"
+          class="text-decoration-none"
+          data-section="location"
+          onclick="showSection(this)"
+        >
+          <i class="fas fa-map-marker-alt me-1"></i> Location
+        </a>
+        <a
+          href="#"
+          class="text-decoration-none"
+          data-section="others"
+          onclick="showSection(this)"
+        >
+          <i class="fas fa-ellipsis-h me-1"></i> Others
+        </a>
+      </div>
+    </header>
+
+    <div class="container mt-5">
+      <!-- Sections -->
+      <div id="general" class="section-content active">
+        <div class="container">
+          <div class="infoCard">
+            <div class="card-body">
+              <h2>General Information</h2>
+              <form class="form_sett">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="title"
+                      placeholder="Name this Listing"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="tagline" class="form-label">Tagline</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="tagline"
+                      placeholder="Say Something Catchy"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="category" class="form-label">Category</label>
+                    <select class="form-select" id="category">
+                      <option selected>Select category</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="tags" class="form-label">Tags</label>
+                    <select class="form-select" id="tags">
+                      <option selected>Select Tags</option>
+                      <option value="1">Tag 1</option>
+                      <option value="2">Tag 2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="owner" class="form-label">Owner (Optional)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="owner"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="description" class="form-label"
+                    >Description</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="description"
+                    rows="3"
+                    placeholder="Type Something"
+                  ></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn-black">Save & Next</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="images" class="section-content">
+        <div class="imageUploadWrapper">
+          <div class="mediaSectionBox">
+            <div class="mediaContentArea">
+              <h2>Images</h2>
+              <form>
+                <div class="row">
+                  <div class="col-md-4 my-3">
+                    <label class="uploadFieldLabel">Logo</label>
+                    <div class="fileDropZone browseLink">
+                      <img
+                        src="./assets/images/document-upload.png"
+                        alt="upload_image"
+                        srcset=""
+                      />
+                      <p>
+                        Drag & drop files or
+                        <span class="browseLink">Browse</span>
+                      </p>
+                      <p class="fileSupportNote">Support JPG, PNG, JPEG File</p>
+                      <input
+                        type="file"
+                        class="d-none"
+                        id="logoUpload"
+                        accept="image/jpeg,image/png"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4 my-3">
+                    <label class="uploadFieldLabel">Cover Image</label>
+                    <div class="fileDropZone browseLink">
+                      <img
+                        src="./assets/images/document-upload.png"
+                        alt="upload_image"
+                        srcset=""
+                      />
+                      <p>
+                        Drag & drop files or
+                        <span class="browseLink">Browse</span>
+                      </p>
+                      <p class="fileSupportNote">Support JPG, PNG, JPEG File</p>
+                      <input
+                        type="file"
+                        class="d-none"
+                        id="coverUpload"
+                        accept="image/jpeg,image/png"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4 my-3">
+                    <label class="uploadFieldLabel">Gallery Images</label>
+                    <div class="fileDropZone browseLink">
+                      <img
+                        src="./assets/images/document-upload.png"
+                        alt="upload_image"
+                        srcset=""
+                      />
+                      <p>
+                        Drag & drop files or
+                        <span class="browseLink">Browse</span>
+                      </p>
+                      <p class="fileSupportNote">Support JPG, PNG, JPEG File</p>
+                      <input
+                        type="file"
+                        class="d-none"
+                        id="galleryUpload"
+                        accept="image/jpeg,image/png"
+                        multiple
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn-black">Save & Next</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="section-content">
+        <div class="contactFormContainer">
+          <div class="contactInfoPanel">
+            <div class="contactPanelContent">
+              <h2>Contact Information</h2>
+              <form class="form_sett">
+                <div class="contactFieldRow">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="email" class="contactFieldLabel">Email</label>
+                      <input
+                        type="email"
+                        class="contactFieldInput form-control"
+                        id="email"
+                        placeholder="Email address"
+                      />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="phone" class="contactFieldLabel"
+                        >Phone Number</label
+                      >
+                      <input
+                        type="tel"
+                        class="contactFieldInput form-control"
+                        idArchitecture="phone"
+                        placeholder="Phone number"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="contactFieldRow">
+                  <div class="row">
+                    <div class="col-md-12 mb-3">
+                      <label for="website" class="contactFieldLabel"
+                        >Website URL</label
+                      >
+                      <input
+                        type="url"
+                        class="contactFieldInput form-control"
+                        id="website"
+                        placeholder="Link"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn-black">Save & Next</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="social" class="section-content">
+        <div class="container mt-5">
+          <div class="custom-box shadow-sm">
+            <h4>Social Networks</h4>
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <label class="form-label">Social Site</label>
+                <select class="form-select">
+                  <option selected disabled>Select Social Channel</option>
+                  <option>Facebook</option>
+                  <option>Instagram</option>
+                  <option>LinkedIn</option>
+                  <option>Twitter</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">URL</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Social Link"
+                />
+              </div>
+            </div>
+
+            <button class="add-another-btn mb-4">Add Another</button>
+
+            <div class="d-flex justify-content-end">
+              <button class="save-btn">Save & Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="working-hours" class="section-content">
+        <div class="container mt-5">
+          <div class="custom-box shadow-sm">
+            <h4>Working Hours</h4>
+            <div class="day-tabs d-flex justify-content-between mb-4">
+              <button class="active" data-day="Sunday">Sunday</button>
+              <button data-day="Monday">Monday</button>
+              <button data-day="Tuesday">Tuesday</button>
+              <button data-day="Wednesday">Wednesday</button>
+              <button data-day="Thursday">Thursday</button>
+              <button data-day="Friday">Friday</button>
+              <button data-day="Saturday">Saturday</button>
+            </div>
+
+            <div id="schedule-wrapper">
+              <!-- Schedules for each day -->
+              <div class="schedule-content active" id="Sunday">
+                <div
+                  class="schedule-options d-flex justify-content-center mb-3"
+                >
+                  <div class="form-check form-check-inline custom-radio">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sundayOption"
+                      id="sundayOpenAll"
+                      checked
+                    />
+                    <label class="form-check-label" for="sundayOpenAll"
+                      >Open all day</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline custom-radio">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sundayOption"
+                      id="sundayClosedAll"
+                    />
+                    <label class="form-check-label" for="sundayClosedAll"
+                      >Closed all day</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline custom-radio">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sundayOption"
+                      id="sundayAppointment"
+                    />
+                    <label class="form-check-label" for="sundayAppointment"
+                      >By appointment only</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline custom-radio">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sundayOption"
+                      id="sundayEnterHours"
+                    />
+                    <label class="form-check-label" for="sundayEnterHours"
+                      >Enter Hours</label
+                    >
+                  </div>
+                </div>
+
+                <div class="my-4">
+                  <label class="form-label">Operational Hours</label>
+                  <select class="form-select">
+                    <option>Select Hours</option>
+                  </select>
+                </div>
+
+                <div class="my-4">
+                  <label class="form-label">Time Zone</label>
+                  <select class="form-select">
+                    <option>Select Time Zone</option>
+                  </select>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="copySchedule"
+                  />
+                  <label class="form-check-label" for="copySchedule">
+                    Copy Schedule for other Days
+                  </label>
+                </div>
+              </div>
+
+              <!-- Duplicate the same div for each day -->
+              <div class="schedule-content" id="Monday"></div>
+              <div class="schedule-content" id="Tuesday"></div>
+              <div class="schedule-content" id="Wednesday"></div>
+              <div class="schedule-content" id="Thursday"></div>
+              <div class="schedule-content" id="Friday"></div>
+              <div class="schedule-content" id="Saturday"></div>
+            </div>
+
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="btn-black">Save & Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="location" class="section-content">
+        <div class="container">
+          <div class="location-container">
+            <h2>Location</h2>
+            <div class="lock-pin mt-4">
+              <div>
+                <i class="fas fa-lock"></i>
+                <label for="lockPin" class="Lock_pin">Lock Pin Location</label>
+              </div>
+              <a href="#" class="manual-coordinates"
+                >Enter coordinates manually</a
+              >
+            </div>
+            <div class="mb-3">
+              <label for="locationInput" class="form-label">Location</label>
+              <input
+                type="text"
+                class="form-control"
+                id="locationInput"
+                placeholder="Address"
+              />
+            </div>
+            <div class="map-placeholder">
+              <!-- Placeholder for the map -->
+              Map Placeholder (Royal Academy of Arts, Piccadilly, etc.)
+            </div>
+            <button class="add-another-btn">Add Another</button>
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="btn-black">Save & Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="others" class="section-content">
+        <div class="container">
+          <div class="form-container">
+            <h4>Other Details</h4>
+            <hr />
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group mb-3">
+                  <label>Price Range</label>
+                  <select class="form-select">
+                    <option selected>Select price range</option>
+                  </select>
+                </div>
+                <div class="form-group mb-3">
+                  <label>Jobs</label>
+                  <select class="form-select">
+                    <option selected>Select listing</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group mb-3">
+                  <label>Products</label>
+                  <select class="form-select">
+                    <option selected>Select Products</option>
+                  </select>
+                </div>
+                <div class="form-group mb-3">
+                  <label>Events</label>
+                  <select class="form-select">
+                    <option selected>Select listing</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="custom-checkbox mb-3">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="robotCheck"
+                checked
+              />
+              <label class="form-check-label" for="robotCheck"
+                >I am not a robot</label
+              >
+            </div>
+            <button class="submit-btn">Submit Listing</button>
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <button class="preview-btn">Preview</button>
+              </div>
+              <div class="col-md-6">
+                <button class="draft-btn">Save as Draft</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-section text-white pt-5 pb-4">
+      <div class="container text-md-left">
+        <div class="row">
+          <!-- Column 1 -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="mb-4 fw-bold">Neighborhood Sights</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Scelerisque vitae et vitae
+              suspendisse vulputate vestibulum tortor nisl cursus. Egestas nulla
+              in
+            </p>
+            <div class="social-icons mt-3">
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-facebook fs-5"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-youtube fs-5"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-twitter fs-5"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="bi bi-linkedin fs-5"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="fw-bold mb-4">Services</h6>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Nightlife</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none"
+                >Accommodation</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Restaurant</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Fitness</a>
+            </p>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="fw-bold mb-4">Quick Links</h6>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Services</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">About Us</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Contact Us</a>
+            </p>
+            <p><a href="#" class="text-white text-decoration-none">Home</a></p>
+          </div>
+
+          <!-- Column 4 -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="fw-bold mb-4">Contact Information</h6>
+            <p><i class="bi bi-envelope me-2"></i> neighbourhood@gmail.com</p>
+            <p><i class="bi bi-telephone me-2"></i> +00012345678</p>
+            <p><i class="bi bi-geo-alt me-2"></i> Lorem Ipsum Dummy text</p>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="row mt-4 pt-4 border-top border-secondary">
+          <div class="col-md-6">
+            <p class="mb-0">
+              Copyright © Neighborhood. 2024. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 greencolor text-md-end mt-3 mt-md-0">
+            <a href="#" class="text-decoration-none me-3">Terms</a>
+            <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
+            <a href="#" class="text-decoration-none">Cookies Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- working-hours script  -->
+
+    <script>
+      const tabButtons = document.querySelectorAll(".day-tabs button");
+      const contents = document.querySelectorAll(".schedule-content");
+      const sundayContent = document.getElementById("Sunday").innerHTML;
+
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          tabButtons.forEach((btn) => btn.classList.remove("active"));
+          button.classList.add("active");
+
+          contents.forEach((content) => content.classList.remove("active"));
+
+          const selected = document.getElementById(button.dataset.day);
+          if (selected.innerHTML.trim() === "") {
+            selected.innerHTML = sundayContent;
+          }
+          selected.classList.add("active");
+        });
+      });
+    </script>
+
+    <!-- Hide and read more button script  -->
+
+    <script>
+      function showSection(clickedBtn) {
+        const sectionId = clickedBtn.getAttribute("data-section");
+        const sections = document.querySelectorAll(".section-content");
+        const buttons = document.querySelectorAll(".button_position a");
+
+        // Hide all sections and remove active from buttons
+        sections.forEach((sec) => sec.classList.remove("active"));
+        buttons.forEach((btn) => btn.classList.remove("active-btn"));
+
+        // Show the relevant section
+        document.getElementById(sectionId).classList.add("active");
+
+        // Add active class to clicked button
+        clickedBtn.classList.add("active-btn");
+      }
+    </script>
+
+    <!-- images upload script  -->
+
+    <script>
+      // Handle browse click to trigger file input
+      document.querySelectorAll(".browseLink").forEach((browse) => {
+        browse.addEventListener("click", function () {
+          const input =
+            this.closest(".fileDropZone").querySelector('input[type="file"]');
+          input.click();
+        });
+      });
+
+      // Handle file input change (both click and drag-and-drop)
+      document.querySelectorAll('input[type="file"]').forEach((input) => {
+        input.addEventListener("change", function (e) {
+          if (e.target.files.length > 0) {
+            alert(
+              `Selected ${e.target.files.length} file(s) for ${this.id.replace(
+                "Upload",
+                ""
+              )}! (This is a demo)`
+            );
+          }
+        });
+      });
+
+      // Handle drag-and-drop functionality
+      document.querySelectorAll(".fileDropZone").forEach((zone) => {
+        zone.addEventListener("dragover", function (e) {
+          e.preventDefault();
+          this.classList.add("dragover");
+        });
+
+        zone.addEventListener("dragleave", function (e) {
+          e.preventDefault();
+          this.classList.remove("dragover");
+        });
+
+        zone.addEventListener("drop", function (e) {
+          e.preventDefault();
+          this.classList.remove("dragover");
+          const input = this.querySelector('input[type="file"]');
+          const files = e.dataTransfer.files;
+          if (files.length > 0) {
+            input.files = files;
+            alert(
+              `Dropped ${files.length} file(s) for ${input.id.replace(
+                "Upload",
+                ""
+              )}! (This is a demo)`
+            );
+          }
+        });
+      });
+
+      // Prevent form submission for demo purposes
+      document.querySelector("form").forEach((form) => {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Form submitted! (This is a demo)");
+        });
+      });
+    </script>
+
+    <script>
+      function toggleMore(btn) {
+        const moreText = btn.previousElementSibling.querySelector(".more-text");
+        const isOpen = btn.classList.toggle("open");
+        moreText.style.display = isOpen ? "inline" : "none";
+        btn.innerHTML = isOpen
+          ? 'Hide <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L11.586 9 7.293 4.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" /></svg>'
+          : 'Read More <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L11.586 9 7.293 4.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" /></svg>';
+      }
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const upperRow = document.getElementById("upperRow");
+        const lowerRow = document.getElementById("lowerRow");
+        const prevButton = document.querySelector(".carousel-control-prev");
+        const nextButton = document.querySelector(".carousel-control-next");
+
+        const cardWidth = upperRow.querySelector(".col-md-3").offsetWidth + 30; // Include padding (15px each side)
+        const visibleCards = 4; // Number of cards visible at a time
+        const totalCards = upperRow.children.length; // 6 cards per row
+        let currentIndex = 0;
+
+        // Update button states
+        function updateButtonStates() {
+          prevButton.classList.toggle("disabled", currentIndex <= 0);
+          nextButton.classList.toggle(
+            "disabled",
+            currentIndex >= totalCards - visibleCards
+          );
+        }
+
+        // Update carousel position
+        function updateCarousel() {
+          // Prevent sliding beyond bounds
+          if (currentIndex < 0) {
+            currentIndex = 0;
+          } else if (currentIndex > totalCards - visibleCards) {
+            currentIndex = totalCards - visibleCards;
+          }
+
+          const offset = -currentIndex * cardWidth;
+          upperRow.style.transform = `translateX(${offset}px)`;
+          lowerRow.style.transform = `translateX(${offset}px)`;
+
+          // Update button states
+          updateButtonStates();
+        }
+
+        // Event listeners
+        nextButton.addEventListener("click", () => {
+          if (currentIndex < totalCards - visibleCards) {
+            currentIndex++;
+            upperRow.style.transition = "transform 0.5s ease-in-out";
+            lowerRow.style.transition = "transform 0.5s ease-in-out";
+            updateCarousel();
+          }
+        });
+
+        prevButton.addEventListener("click", () => {
+          if (currentIndex > 0) {
+            currentIndex--;
+            upperRow.style.transition = "transform 0.5s ease-in-out";
+            lowerRow.style.transition = "transform 0.5s ease-in-out";
+            updateCarousel();
+          }
+        });
+
+        // Initialize button states
+        updateButtonStates();
+      });
+    </script>
+
+    <script>
+      const toggler = document.querySelector(".custom-toggler");
+
+      toggler.addEventListener("click", function () {
+        this.classList.toggle("active");
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
