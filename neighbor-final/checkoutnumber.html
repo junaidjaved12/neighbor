@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Hero section  -->
+    <header class="bg_grad_checkout">
+      <!-- Navbar  -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="nav_img" href="./index.html">
+            <img
+              class="img-fluid"
+              src="./assets/images/297e342163d49e74aac73046d98c485fca226d2e.png"
+              alt=""
+              srcset=""
+            />
+          </a>
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-line"></span>
+            <span class="toggler-line"></span>
+            <span class="toggler-line"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html"
+                  >Home<span class="yellow-dot"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./explore.html"
+                  >Explore<span class="yellow-dot"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blogs.html"
+                  >Blogs<span class="yellow-dot"></span
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html"
+                  >About Us<span class="yellow-dot"></span
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./contactus.html"
+                  >Contact<span class="yellow-dot"></span
+                ></a>
+              </li>
+            </ul>
+            <div class="ms-auto d-flex">
+              <button class="btn-add-listing" type="button">Add Listing</button>
+              <button class="btn-sign-in" type="button">Sign In</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mt-5">
+        <div class="row row_reverse">
+          <div class="col-md-4 mt-md-0 mt-3">
+            <div class="d-flex justify-content-between checkbox_dollar">
+              <p>One Ohio Medical Marijuana</p>
+              <h4>$49.49</h4>
+            </div>
+            <div class="d-flex justify-content-between checkbox_dollar">
+              <p>One Ohio Medical Marijuana</p>
+              <h4>$49.49</h4>
+            </div>
+            <div class="d-flex justify-content-between checkbox_dollar">
+              <p>One Ohio Medical Marijuana</p>
+              <h4>$49.49</h4>
+            </div>
+            <hr class="app-section-divider" />
+            <div class="d-flex justify-content-between checkbox_dollar">
+              <p>Subtotal</p>
+              <h4>$150.00</h4>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="app-page-background">
+              <div class="app-form-container app-payment-container">
+                <h2 class="app-section-title-check">Payment</h2>
+                <hr class="app-section-divider" />
+
+                <p class="app-form-label">Pay With:</p>
+                <div class="d-flex gap-4 mb-4 app-payment-method-radios">
+                  <div class="form-check app-custom-radio">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="paymentMethod"
+                      id="cardRadio"
+                      value="card"
+                      checked
+                    />
+                    <label class="form-check-label" for="cardRadio">Card</label>
+                  </div>
+                  <div class="form-check app-custom-radio">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="paymentMethod"
+                      id="googlePayRadio"
+                      value="googlePay"
+                    />
+                    <label class="form-check-label" for="googlePayRadio"
+                      >Google Pay</label
+                    >
+                  </div>
+                  <div class="form-check app-custom-radio">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="paymentMethod"
+                      id="applePayRadio"
+                      value="applePay"
+                    />
+                    <label class="form-check-label" for="applePayRadio"
+                      >Apple Pay</label
+                    >
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label
+                    for="cardNumber"
+                    class="app-form-label-small fw-semibold"
+                    >Card Number</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control mt-2 app-form-input"
+                    id="cardNumber"
+                    placeholder="1234 5678 9101 1121"
+                    maxlength="19"
+                  />
+                </div>
+
+                <div class="row g-3 mb-4">
+                  <div class="col-md-6">
+                    <label
+                      for="expirationDate"
+                      class="app-form-label-small fw-semibold"
+                      >Expiration Date</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control app-form-input"
+                      id="expirationDate"
+                      placeholder="MM/YY"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="cvv" class="app-form-label-small fw-semibold"
+                      >CVV</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control app-form-input"
+                      id="cvv"
+                      placeholder="123"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-check mb-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="saveCardDetails"
+                  />
+                  <label
+                    class="form-check-label app-form-label-small"
+                    for="saveCardDetails"
+                  >
+                    Save card details
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  class="app-pay-button w-100"
+                  id="payButton"
+                >
+                  Pay $150
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- popup model  -->
+
+    <div
+      class="modal fade"
+      id="confirmationModal"
+      tabindex="-1"
+      aria-labelledby="confirmationModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered app-modal-dialog">
+        <div class="modal-content app-modal-content">
+          <div class="app-modal-body">
+            <div class="app-confirmation-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h5 class="app-confirmation-title" id="confirmationModalLabel">
+              Confirmation
+            </h5>
+            <p class="app-confirmation-text">
+              Are you sure you want to pay <span>$150.00</span> from your credit
+              card ended wi 8664
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+              <button
+                type="button"
+                class="app-confirm-button"
+                id="yesConfirmBtn"
+              >
+                Yes Confirm
+              </button>
+              <button
+                type="button"
+                class="app-cancel-button"
+                data-bs-dismiss="modal"
+              >
+                No, Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-section text-white pt-5 pb-4">
+      <div class="container text-md-left">
+        <div class="row">
+          <!-- Column 1 -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="mb-4 fw-bold">Neighborhood Sights</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Scelerisque vitae et vitae
+              suspendisse vulputate vestibulum tortor nisl cursus. Egestas nulla
+              in
+            </p>
+            <div class="social-icons mt-3">
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-facebook fs-5"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-youtube fs-5"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-twitter fs-5"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="bi bi-linkedin fs-5"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="fw-bold mb-4">Services</h6>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Nightlife</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none"
+                >Accommodation</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Restaurant</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Fitness</a>
+            </p>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="fw-bold mb-4">Quick Links</h6>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Services</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">About Us</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Contact Us</a>
+            </p>
+            <p><a href="#" class="text-white text-decoration-none">Home</a></p>
+          </div>
+
+          <!-- Column 4 -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="fw-bold mb-4">Contact Information</h6>
+            <p><i class="bi bi-envelope me-2"></i> neighbourhood@gmail.com</p>
+            <p><i class="bi bi-telephone me-2"></i> +00012345678</p>
+            <p><i class="bi bi-geo-alt me-2"></i> Lorem Ipsum Dummy text</p>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="row mt-4 pt-4 border-top border-secondary">
+          <div class="col-md-6">
+            <p class="mb-0">
+              Copyright © Neighborhood. 2024. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 greencolor text-md-end mt-3 mt-md-0">
+            <a href="#" class="text-decoration-none me-3">Terms</a>
+            <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
+            <a href="#" class="text-decoration-none">Cookies Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const payButton = document.getElementById("payButton");
+        const confirmationModal = new bootstrap.Modal(
+          document.getElementById("confirmationModal")
+        );
+        const yesConfirmBtn = document.getElementById("yesConfirmBtn");
+        const cardNumberInput = document.getElementById("cardNumber"); // Get the card number input
+
+        // Event listener for Pay Button
+        payButton.addEventListener("click", function () {
+          confirmationModal.show();
+        });
+
+        // Event listener for Yes Confirm Button in modal
+        yesConfirmBtn.addEventListener("click", function () {
+          alert("Payment Confirmed!"); // For demonstration
+          confirmationModal.hide();
+        });
+
+        // --- Card Number Formatting Logic ---
+        cardNumberInput.addEventListener("input", function (e) {
+          let value = e.target.value.replace(/\s/g, ""); // Remove existing spaces
+          let formattedValue = "";
+
+          for (let i = 0; i < value.length; i++) {
+            if (i > 0 && i % 4 === 0) {
+              formattedValue += " ";
+            }
+            formattedValue += value[i];
+          }
+          e.target.value = formattedValue;
+        });
+        // --- End Card Number Formatting Logic ---
+      });
+    </script>
+
+    <script>
+      const toggler = document.querySelector(".custom-toggler");
+
+      toggler.addEventListener("click", function () {
+        this.classList.toggle("active");
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

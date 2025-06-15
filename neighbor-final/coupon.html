@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Hero section  -->
+    <header class="bg_grad_restaurant_coupon">
+      <!-- Navbar  -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="nav_img" href="./index.html">
+            <img
+              class="img-fluid"
+              src="./assets/images/297e342163d49e74aac73046d98c485fca226d2e.png"
+              alt=""
+              srcset=""
+            />
+          </a>
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-line"></span>
+            <span class="toggler-line"></span>
+            <span class="toggler-line"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html"
+                  >Home<span class="yellow-dot"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./explore.html"
+                  >Explore<span class="yellow-dot"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blogs.html"
+                  >Blogs<span class="yellow-dot"></span
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html"
+                  >About Us<span class="yellow-dot"></span
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./contactus.html"
+                  >Contact<span class="yellow-dot"></span
+                ></a>
+              </li>
+            </ul>
+            <div class="ms-auto d-flex">
+              <button class="btn-add-listing" type="button">Add Listing</button>
+              <button class="btn-sign-in" type="button">Sign In</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="set_postion_coupon">
+        <img src="./assets/images/OJO4YQ0 1.png" class="" alt="" srcset="" />
+      </div>
+    </header>
+
+    <!-- Recommendations section  -->
+
+    <section>
+      <div class="container py-4">
+        <h2 class="suggestion-header-coupon">
+          Hi there,
+          <span> Save Your Money by checking out these deals </span>
+        </h2>
+        <div class="xsearch-container">
+          <i class="xsearch-icon fas fa-search"></i>
+          <input
+            type="text"
+            placeholder="search anything"
+            class="xsearch-input flex-grow-1"
+          />
+
+          <div class="xsearch-divider"></div>
+
+          <i class="xsearch-icon fas fa-map-marker-alt"></i>
+          <input
+            type="text"
+            placeholder="Neighborhood"
+            class="xsearch-input flex-grow-1"
+          />
+
+          <button class="xsearch-btn ms-md-3">Search</button>
+        </div>
+
+        <div class="mt-4" style="text-align: center">
+          <button type="button" class="events_light_butn">Food & Drinks</button>
+          <button type="button" class="events_light_butn">
+            Fun Things to Do
+          </button>
+          <button type="button" class="events_light_butn">
+            Health & Fitness
+          </button>
+          <button type="button" class="events_light_butn">Beauty Spa</button>
+          <button type="button" class="events_light_butn">
+            Professional Services
+          </button>
+        </div>
+
+        <h3 class="local_deal">Local Deals</h3>
+
+        <div class="row">
+          <!-- First Card -->
+          <div class="col-md-4">
+            <div class="item-box">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/coupon_1.png"
+                  class="item-image"
+                  alt="Photo Shoot"
+                />
+                <span class="trend-tag">Trending</span>
+                <span class="purchase-tag"> 10000+ Bought</span>
+                <span class="purchase-tag-1000">
+                  <i class="fas fa-star" style="color: white"></i> Best
+                  Rated</span
+                >
+              </div>
+              <div class="item-content">
+                <h5 class="item-title">
+                  In-Studio Boudoir Photo Shoot With ThreeOutfit Changes
+                </h5>
+                <div class="rating-score">
+                  4.8 <span class="star-icons">★★★★★</span> 384 Ratings
+                </div>
+                <div class="price-display">
+                  <span class="original-cost">$240 $69 </span>
+                  <span class="discounted-cost">$62.10 </span>
+                  <span class="time-offer">Limited Time</span>
+                </div>
+                <div class="creator-name">
+                  Bad Kitty Photography <br />
+                  10+ bought
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div class="col-md-4">
+            <div class="item-box">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/coupon_2.png"
+                  class="item-image"
+                  alt="Photo Shoot"
+                />
+                <span class="trend-tag">Trending</span>
+                <span class="purchase-tag"> 10000+ Bought</span>
+                <span class="purchase-tag-1000">
+                  <i class="fas fa-star" style="color: white"></i> Best
+                  Rated</span
+                >
+              </div>
+              <div class="item-content">
+                <h5 class="item-title">Releaf Clinics Medical Marijuana</h5>
+                <div class="rating-score">
+                  4.3 <span class="star-icons">★★★★★</span> 111914 Ratings
+                </div>
+                <div class="price-display">
+                  <span class="original-cost">$50</span>
+                  <span class="discounted-cost">$25</span>
+                  <span class="off_fifty">50% OFF</span>
+                </div>
+                <div class="creator-name">Bad Kitty Photography <br /></div>
+              </div>
+            </div>
+          </div>
+          <!-- Third Card -->
+          <div class="col-md-4">
+            <div class="item-box">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/coupon_3.png"
+                  class="item-image"
+                  alt="Pasta Class"
+                />
+                <span class="trend-tag">Trending</span>
+                <span class="purchase-tag"> 10000+ Bought</span>
+                <span class="purchase-tag-1000">
+                  <i class="fas fa-star" style="color: white"></i> Best
+                  Rated</span
+                >
+              </div>
+              <div class="item-content">
+                <h5 class="item-title">Releaf Clinics Medical Marijuana</h5>
+                <div class="rating-score">
+                  4.3 <span class="star-icons">★★★★★</span> 111914 Ratings
+                </div>
+                <div class="price-display">
+                  <span class="original-cost">$50</span>
+                  <span class="discounted-cost">$25</span>
+                  <span class="off_fifty">50% OFF</span>
+                </div>
+                <div class="creator-name">Bad Kitty Photography <br /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-md-5 mt-3">
+          <!-- First Card -->
+          <div class="col-md-4">
+            <div class="item-box">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/coupon_4.png"
+                  class="item-image"
+                  alt="Photo Shoot"
+                />
+                <span class="trend-tag">Trending</span>
+                <span class="purchase-tag"> 10000+ Bought</span>
+                <span class="purchase-tag-1000">
+                  <i class="fas fa-star" style="color: white"></i> Best
+                  Rated</span
+                >
+              </div>
+              <div class="item-content">
+                <h5 class="item-title">Sam's Club</h5>
+                <div class="rating-score">
+                  4.8 <span class="star-icons">★★★★★</span> 384 Ratings
+                </div>
+                <div class="price-display">
+                  <span class="original-cost">$50 </span>
+                  <span class="discounted-cost">$25 </span>
+                  <span class="off_fifty">50% OFF</span>
+                </div>
+                <div class="creator-name">Sam's Club Membership Packages</div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div class="col-md-4">
+            <div class="item-box">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/coupon_5.png"
+                  class="item-image"
+                  alt="Photo Shoot"
+                />
+                <span class="trend-tag">Trending</span>
+                <span class="purchase-tag"> 10000+ Bought</span>
+                <span class="purchase-tag-1000">
+                  <i class="fas fa-star" style="color: white"></i> Best
+                  Rated</span
+                >
+              </div>
+              <div class="item-content">
+                <h5 class="item-title">Releaf Clinics Medical Marijuana</h5>
+                <div class="rating-score">
+                  4.3 <span class="star-icons">★★★★★</span> 111914 Ratings
+                </div>
+                <div class="price-display">
+                  <span class="original-cost">$50</span>
+                  <span class="discounted-cost">$25</span>
+                  <span class="off_fifty">50% OFF</span>
+                  <span style="color: rgb(255, 83, 83)"
+                    >$49.49
+                    <span style="color: #000; font-size: 13px"
+                      >16 Hours Left</span
+                    ></span
+                  >
+                </div>
+                <div class="creator-name">Sam's Club Membership Packages</div>
+              </div>
+            </div>
+          </div>
+          <!-- Third Card -->
+          <div class="col-md-4">
+            <div class="item-box">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/coupon_6.png"
+                  class="item-image"
+                  alt="Pasta Class"
+                />
+                <span class="trend-tag">Trending</span>
+                <span class="purchase-tag"> 10000+ Bought</span>
+                <span class="purchase-tag-1000">
+                  <i class="fas fa-star" style="color: white"></i> Best
+                  Rated</span
+                >
+              </div>
+              <div class="item-content">
+                <h5 class="item-title">Releaf Clinics Medical Marijuana</h5>
+                <div class="rating-score">
+                  4.3 <span class="star-icons">★★★★★</span> 111914 Ratings
+                </div>
+                <div class="price-display">
+                  <span class="original-cost">$50</span>
+                  <span class="discounted-cost">$25</span>
+                  <span class="off_fifty">50% OFF</span>
+                </div>
+                <div class="creator-name">Sam's Club Membership Packages</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Popular Deals  -->
+      <section class="Popular_deal">
+        <div class="container">
+          <h2 class="pop_deal">Popular Deals</h2>
+          <div class="row mt-md-5 mt-3">
+            <!-- First Card -->
+            <div class="col-md-4">
+              <div class="item-box">
+                <div class="position-relative">
+                  <img
+                    src="./assets/images/coupon_4.png"
+                    class="item-image"
+                    alt="Photo Shoot"
+                  />
+                  <span class="trend-tag">Trending</span>
+                  <span class="purchase-tag"> 10000+ Bought</span>
+                  <span class="purchase-tag-1000">
+                    <i class="fas fa-star" style="color: white"></i> Best
+                    Rated</span
+                  >
+                </div>
+                <div class="item-content">
+                  <h5 class="item-title">Sam's Club</h5>
+                  <div class="rating-score">
+                    4.8 <span class="star-icons">★★★★★</span>
+                  </div>
+                  <div class="price-display">
+                    <span class="original-cost">$50 </span>
+                    <span class="discounted-cost">$25 </span>
+                    <span class="off_fifty">50% OFF</span>
+                  </div>
+                  <div class="creator-name">Sam's Club Membership Packages</div>
+                </div>
+              </div>
+            </div>
+            <!-- Second Card -->
+            <div class="col-md-4">
+              <div class="item-box">
+                <div class="position-relative">
+                  <img
+                    src="./assets/images/coupon_5.png"
+                    class="item-image"
+                    alt="Photo Shoot"
+                  />
+                  <span class="trend-tag">Trending</span>
+                  <span class="purchase-tag"> 10000+ Bought</span>
+                  <span class="purchase-tag-1000">
+                    <i class="fas fa-star" style="color: white"></i> Best
+                    Rated</span
+                  >
+                </div>
+                <div class="item-content">
+                  <h5 class="item-title">Releaf Clinics Medical Marijuana</h5>
+                  <div class="rating-score">
+                    4.3 <span class="star-icons">★★★★★</span> 111914 Ratings
+                  </div>
+                  <div class="price-display">
+                    <span class="original-cost">$50</span>
+                    <span class="discounted-cost">$25</span>
+                    <span class="off_fifty">50% OFF</span>
+                    <span style="color: rgb(255, 83, 83)"
+                      >$49.49
+                      <span style="color: #000; font-size: 13px"
+                        >16 Hours Left</span
+                      ></span
+                    >
+                  </div>
+                  <div class="creator-name">Sam's Club Membership Packages</div>
+                </div>
+              </div>
+            </div>
+            <!-- Third Card -->
+            <div class="col-md-4">
+              <div class="item-box">
+                <div class="position-relative">
+                  <img
+                    src="./assets/images/coupon_6.png"
+                    class="item-image"
+                    alt="Pasta Class"
+                  />
+                  <span class="trend-tag">Trending</span>
+                  <span class="purchase-tag"> 10000+ Bought</span>
+                  <span class="purchase-tag-1000">
+                    <i class="fas fa-star" style="color: white"></i> Best
+                    Rated</span
+                  >
+                </div>
+                <div class="item-content">
+                  <h5 class="item-title">Releaf Clinics Medical Marijuana</h5>
+                  <div class="rating-score">
+                    4.3 <span class="star-icons">★★★★★</span> 111914 Ratings
+                  </div>
+                  <div class="price-display">
+                    <span class="original-cost">$50</span>
+                    <span class="discounted-cost">$25</span>
+                    <span class="off_fifty">50% OFF</span>
+                  </div>
+                  <div class="creator-name">Sam's Club Membership Packages</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <h2 class="suggestion-header-coupon mt-4">Recommendations</h2>
+        <div class="row mt-md-5 mt-3">
+          <!-- First Card -->
+          <div class="col-md-4">
+            <div class="item-box">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/recomended_image.png"
+                  class="item-image"
+                  alt="Photo Shoot"
+                />
+                <span class="trend-tag">Trending</span>
+                <span class="purchase-tag"> 10000+ Bought</span>
+                <span class="purchase-tag-1000">
+                  <i class="fas fa-star" style="color: white"></i> Best
+                  Rated</span
+                >
+              </div>
+              <div class="item-content">
+                <h5 class="item-title">
+                  In-Studio Boudoir Photo Shoot With ThreeOutfit Changes
+                </h5>
+                <div class="rating-score">
+                  4.8 <span class="star-icons">★★★★★</span> 384 Ratings
+                </div>
+                <div class="price-display">
+                  <span class="original-cost">$240</span>
+                  <span class="discounted-cost">$69</span>
+                  <span class="time-offer">$62.10 Limited Time</span>
+                </div>
+                <div class="creator-name">
+                  Bad Kitty Photography <br />
+                  10+ bought
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div class="col-md-4">
+            <div class="item-box">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/recomended_image_1.png"
+                  class="item-image"
+                  alt="Photo Shoot"
+                />
+                <span class="trend-tag">Trending</span>
+                <span class="purchase-tag"> 10000+ Bought</span>
+                <span class="purchase-tag-1000">
+                  <i class="fas fa-star" style="color: white"></i> Best
+                  Rated</span
+                >
+              </div>
+              <div class="item-content">
+                <h5 class="item-title">
+                  In-Studio Boudoir Photo Shoot With ThreeOutfit Changes
+                </h5>
+                <div class="rating-score">
+                  4.8 <span class="star-icons">★★★★★</span> 384 Ratings
+                </div>
+                <div class="price-display">
+                  <span class="original-cost">$240</span>
+                  <span class="discounted-cost">$69</span>
+                  <span class="time-offer">$62.10 Limited Time</span>
+                </div>
+                <div class="creator-name">
+                  Bad Kitty Photography <br />10+ bought
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Third Card -->
+          <div class="col-md-4">
+            <div class="item-box">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/recomended_image_1.png"
+                  class="item-image"
+                  alt="Pasta Class"
+                />
+                <span class="trend-tag">Trending</span>
+                <span class="purchase-tag"> 10000+ Bought</span>
+                <span class="purchase-tag-1000">
+                  <i class="fas fa-star" style="color: white"></i> Best
+                  Rated</span
+                >
+              </div>
+              <div class="item-content">
+                <h5 class="item-title">
+                  One, Two, or Four Classpop! Pasta Making Class (Up to 3...
+                </h5>
+                <div class="creator-name">
+                  215 N Laflin Street, Chicago 2.1 mi
+                </div>
+                <div class="rating-score">
+                  4.4 <span class="star-icons">★★★★★</span> 11914 Ratings
+                </div>
+                <div class="price-display">
+                  <span class="original-cost">$90</span>
+                  <span class="discounted-cost">$25</span>
+                  <span class="time-offer">$50%</span>
+                </div>
+
+                <div class="member-perk">Sam's Club Membership Packages</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-md-5 mt-3">
+          <!-- First Card -->
+          <div class="col-md-4">
+            <div class="item-box">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/recomended_image.png"
+                  class="item-image"
+                  alt="Photo Shoot"
+                />
+                <span class="trend-tag">Trending</span>
+                <span class="purchase-tag"> 10000+ Bought</span>
+                <span class="purchase-tag-1000">
+                  <i class="fas fa-star" style="color: white"></i> Best
+                  Rated</span
+                >
+              </div>
+              <div class="item-content">
+                <h5 class="item-title">
+                  In-Studio Boudoir Photo Shoot With ThreeOutfit Changes
+                </h5>
+                <div class="rating-score">
+                  4.8 <span class="star-icons">★★★★★</span> 384 Ratings
+                </div>
+                <div class="price-display">
+                  <span class="original-cost">$240</span>
+                  <span class="discounted-cost">$69</span>
+                  <span class="time-offer">$62.10 Limited Time</span>
+                </div>
+                <div class="creator-name">
+                  Bad Kitty Photography <br />
+                  10+ bought
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div class="col-md-4">
+            <div class="item-box">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/recomended_image_1.png"
+                  class="item-image"
+                  alt="Photo Shoot"
+                />
+                <span class="trend-tag">Trending</span>
+                <span class="purchase-tag"> 10000+ Bought</span>
+                <span class="purchase-tag-1000">
+                  <i class="fas fa-star" style="color: white"></i> Best
+                  Rated</span
+                >
+              </div>
+              <div class="item-content">
+                <h5 class="item-title">
+                  In-Studio Boudoir Photo Shoot With ThreeOutfit Changes
+                </h5>
+                <div class="rating-score">
+                  4.8 <span class="star-icons">★★★★★</span> 384 Ratings
+                </div>
+                <div class="price-display">
+                  <span class="original-cost">$240</span>
+                  <span class="discounted-cost">$69</span>
+                  <span class="time-offer">$62.10 Limited Time</span>
+                </div>
+                <div class="creator-name">
+                  Bad Kitty Photography <br />10+ bought
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Third Card -->
+          <div class="col-md-4">
+            <div class="item-box">
+              <div class="position-relative">
+                <img
+                  src="./assets/images/recomended_image_1.png"
+                  class="item-image"
+                  alt="Pasta Class"
+                />
+                <span class="trend-tag">Trending</span>
+                <span class="purchase-tag"> 10000+ Bought</span>
+                <span class="purchase-tag-1000">
+                  <i class="fas fa-star" style="color: white"></i> Best
+                  Rated</span
+                >
+              </div>
+              <div class="item-content">
+                <h5 class="item-title">
+                  One, Two, or Four Classpop! Pasta Making Class (Up to 3...
+                </h5>
+                <div class="creator-name">
+                  215 N Laflin Street, Chicago 2.1 mi
+                </div>
+                <div class="rating-score">
+                  4.4 <span class="star-icons">★★★★★</span> 11914 Ratings
+                </div>
+                <div class="price-display">
+                  <span class="original-cost">$90</span>
+                  <span class="discounted-cost">$25</span>
+                  <span class="time-offer">$50%</span>
+                </div>
+
+                <div class="member-perk">Sam's Club Membership Packages</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section text-white pt-5 pb-4">
+      <div class="container text-md-left">
+        <div class="row">
+          <!-- Column 1 -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="mb-4 fw-bold">Neighborhood Sights</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Scelerisque vitae et vitae
+              suspendisse vulputate vestibulum tortor nisl cursus. Egestas nulla
+              in
+            </p>
+            <div class="social-icons mt-3">
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-facebook fs-5"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-youtube fs-5"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-twitter fs-5"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="bi bi-linkedin fs-5"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="fw-bold mb-4">Services</h6>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Nightlife</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none"
+                >Accommodation</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Restaurant</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Fitness</a>
+            </p>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="fw-bold mb-4">Quick Links</h6>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Services</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">About Us</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Contact Us</a>
+            </p>
+            <p><a href="#" class="text-white text-decoration-none">Home</a></p>
+          </div>
+
+          <!-- Column 4 -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="fw-bold mb-4">Contact Information</h6>
+            <p><i class="bi bi-envelope me-2"></i> neighbourhood@gmail.com</p>
+            <p><i class="bi bi-telephone me-2"></i> +00012345678</p>
+            <p><i class="bi bi-geo-alt me-2"></i> Lorem Ipsum Dummy text</p>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="row mt-4 pt-4 border-top border-secondary">
+          <div class="col-md-6">
+            <p class="mb-0">
+              Copyright © Neighborhood. 2024. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 greencolor text-md-end mt-3 mt-md-0">
+            <a href="#" class="text-decoration-none me-3">Terms</a>
+            <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
+            <a href="#" class="text-decoration-none">Cookies Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const toggler = document.querySelector(".custom-toggler");
+
+      toggler.addEventListener("click", function () {
+        this.classList.toggle("active");
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
