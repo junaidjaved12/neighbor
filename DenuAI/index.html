@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Hero section  -->
+    <header class="bg_grad">
+      <!-- Navbar  -->
+      <nav class="navbar navbar-expand-lg backdrop-blur fixed-top">
+        <div class="container">
+          <a class="nav_img" href="#">
+            <img
+              class="img-fluid denu-logo"
+              src="./assets/logos/logo-new-1.png"
+              alt="logo-1"
+            />
+          </a>
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-line"></span>
+            <span class="toggler-line"></span>
+            <span class="toggler-line"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >How it Works<span class="yellow-dot"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./explore.html"
+                  >Features<span class="yellow-dot"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blogs.html"
+                  >Pricing<span class="yellow-dot"></span
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html"
+                  >FAQ<span class="yellow-dot"></span
+                ></a>
+              </li>
+            </ul>
+            <div class="ms-auto d-flex">
+              <a href="./login.html">
+                <button class="btn-login-in py-2 px-5" type="button">
+                  Login
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Experience the future of Nudes with our advanced deepnude AI technology.  -->
+    <section class="main-section">
+      <div class="container DenuAI">
+        <div class="row">
+          <div class="col-lg-7">
+            <span class="ai-powered"> ✨ AI-Powered Technology </span>
+            <h1
+              class="display-4 display-md-1 mt-3 fw-bold mb-4 text-white heading-custom"
+            >
+              Undress images with
+              <span class="gradient-text-1">DenuAI</span>
+              <span class="gradient-text-2">AI</span>
+            </h1>
+            <p class="paragraph-custom text-secondary mb-4">
+              Experience the future of Nudes with our advanced deepnude AI
+              technology.
+            </p>
+            <div class="button-setting ">
+              <button
+                class="btn-undress d-inline-flex align-items-center fw-bold text-white"
+              >
+                <span>Undress Now!</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ms-2 arrow-icon"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <button
+                class="btn-telegram d-inline-flex align-items-center fw-bold"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="me-2 icon-svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.29-.49.8-.75 3.12-1.36 5.2-2.26 6.24-2.7 2.98-1.25 3.6-1.47 4.01-1.47.09 0 .28.02.4.12.11.08.14.19.16.27.02.07.02.14.01.2z"
+                  ></path>
+                </svg>
+                <span>Telegram Bot</span>
+              </button>
+              <button
+                class="btn-learn d-inline-flex align-items-center fw-bold"
+              >
+                <span>Learn More</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ms-2 icon-arrow"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- Bootstrap Grid Layout -->
+            <div class="container mt-5">
+              <div class="row g-4 mt-4 d-none d-md-flex">
+                <!-- Box 1 -->
+                <div class="col-sm-4">
+                  <div class="stat-box text-center position-relative">
+                    <div class="emoji">👥</div>
+                    <div class="stat-value">
+                      <span class="glow-text">+450k</span>
+                    </div>
+                    <div class="stat-label">Users</div>
+                  </div>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="col-sm-4">
+                  <div class="stat-box text-center position-relative">
+                    <div class="emoji">🖼️</div>
+                    <div class="stat-value">
+                      <span class="glow-text">+2M</span>
+                    </div>
+                    <div class="stat-label">Images</div>
+                  </div>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="col-sm-4">
+                  <div class="stat-box text-center position-relative">
+                    <div class="emoji">⚡</div>
+                    <div class="stat-value">
+                      <span class="glow-text">99.95%</span>
+                    </div>
+                    <div class="stat-label">Uptime</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 mt-lg-0 mt-4">
+            <!-- Container -->
+            <div class="image-container">
+              <img
+                src="./assets/images/clothes0.avif"
+                alt="Before"
+                class="image-before img-fluid"
+              />
+              <img
+                src="./assets/images/nude0.avif"
+                alt="After"
+                class="image-after img-fluid"
+                id="afterImage"
+              />
+              <div class="scan-line" id="scanLine"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+
+    <section class="works-section">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-white mb-3">How It Works</h2>
+        <p class="fs-5 text-secondary">
+          Nudify your images in three simple steps
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 align-content-center">
+            <div
+              class="w-100 w-md-50 d-flex flex-column justify-content-center gap-3"
+            >
+              <!-- Step 1 -->
+              <div
+                class="d-flex align-items-center gap-3 p-3 bg-dark-glass rounded border border-dark-glass"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center rounded-circle fw-bold circle-step"
+                >
+                  1
+                </div>
+                <div>
+                  <div class="d-flex align-items-center gap-2 mb-1">
+                    <span style="font-size: 1.25rem">📤</span>
+                    <h3 class="h6 fw-bold text-white mb-0">Upload Photo</h3>
+                  </div>
+                  <p class="small text-light-gray mb-0">
+                    Select any photo you want to undress
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div
+                class="d-flex align-items-center gap-3 p-3 bg-dark-glass rounded border border-dark-glass"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center rounded-circle fw-bold circle-step"
+                >
+                  2
+                </div>
+                <div>
+                  <div class="d-flex align-items-center gap-2 mb-1">
+                    <span style="font-size: 1.25rem">✨</span>
+                    <h3 class="h6 fw-bold text-white mb-0">AI Magic</h3>
+                  </div>
+                  <p class="small text-light-gray mb-0">
+                    Our AI processes your image instantly
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div
+                class="d-flex align-items-center gap-3 p-3 bg-dark-glass rounded border border-dark-glass"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center rounded-circle fw-bold circle-step"
+                >
+                  3
+                </div>
+                <div>
+                  <div class="d-flex align-items-center gap-2 mb-1">
+                    <span style="font-size: 1.25rem">⬇️</span>
+                    <h3 class="h6 fw-bold text-white mb-0">Download</h3>
+                  </div>
+                  <p class="small text-light-gray mb-0">
+                    Get your deepnude image in high quality
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center mt-lg-0 mt-4">
+            <div class="img-reveal-wrapper">
+              <div class="img-reveal-frame" id="revealSlider">
+                <img
+                  src="./assets/images/clothes1.jpg"
+                  alt="Before"
+                  class="img-reveal-before"
+                  id="imgBefore"
+                />
+                <img
+                  src="./assets/images/nude1.webp"
+                  alt="After"
+                  class="img-reveal-after"
+                  id="imgAfter"
+                />
+                <div class="scan-bar-line" id="scanBar"></div>
+                <button class="nav-arrow arrow-left" onclick="goPrev()">
+                  &#10094;
+                </button>
+                <button class="nav-arrow arrow-right" onclick="goNext()">
+                  &#10095;
+                </button>
+                <div class="dot-container" id="dotContainer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="n8ked-btn-wrapper">
+        <a href="https://use.n8ked.app/register" class="n8ked-btn">
+          <span>Try N8ked AI Now</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Experience the Best AI Technology  -->
+
+    <section class="experience">
+      <div class="d-flex justify-content-center">
+        <span class="n8ked-badge">Why Choose N8ked?</span>
+      </div>
+      <h2 class="n8ked-heading">Experience the Best AI Technology</h2>
+      <p class="n8ked-subtext">
+        Our advanced features make creating stunning transformations simple and
+        fast
+      </p>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 mt-lg-0 mt-3">
+            <div
+              class="custom-card-container position-relative p-4 rounded-4 text-white"
+            >
+              <div
+                class="custom-card-overlay position-absolute top-0 start-0 w-100 h-100 rounded-4"
+              ></div>
+              <div
+                class="custom-card-glow position-absolute top-0 start-0 w-100 h-100 rounded-4"
+              ></div>
+
+              <div class="position-relative">
+                <div class="custom-card-icon display-6 mb-3">🎯</div>
+                <h3 class="custom-card-title h5 fw-bold text-white mb-2">
+                  User-Friendly
+                </h3>
+                <p class="custom-card-description text-light mb-0">
+                  Our intuitive interface allows you to effortlessly generate
+                  deepnude images in just seconds.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-lg-0 mt-3">
+            <div
+              class="custom-card-container position-relative p-4 rounded-4 text-white"
+            >
+              <div
+                class="custom-card-overlay position-absolute top-0 start-0 w-100 h-100 rounded-4"
+              ></div>
+              <div
+                class="custom-card-glow position-absolute top-0 start-0 w-100 h-100 rounded-4"
+              ></div>
+
+              <div class="position-relative">
+                <div class="custom-card-icon display-6 mb-3">⚡</div>
+                <h3 class="custom-card-title h5 fw-bold text-white mb-2">
+                  Consistent Quality
+                </h3>
+                <p class="custom-card-description text-light mb-0">
+                  Our advanced AI ensures reliable and high-quality deepnude
+                  results every time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-lg-0 mt-3">
+            <div
+              class="custom-card-container position-relative p-4 rounded-4 text-white"
+            >
+              <div
+                class="custom-card-overlay position-absolute top-0 start-0 w-100 h-100 rounded-4"
+              ></div>
+              <div
+                class="custom-card-glow position-absolute top-0 start-0 w-100 h-100 rounded-4"
+              ></div>
+
+              <div class="position-relative">
+                <div class="custom-card-icon display-6 mb-3">🔒</div>
+                <h3 class="custom-card-title h5 fw-bold text-white mb-2">
+                  Privacy Assured
+                </h3>
+                <p class="custom-card-description text-light mb-0">
+                  Your images are securely processed and immediately deleted
+                  after generating deepnude images, ensuring your privacy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-md-4 mt-3">
+          <div class="col-md-4">
+            <div
+              class="custom-card-container position-relative p-4 rounded-4 text-white"
+            >
+              <div
+                class="custom-card-overlay position-absolute top-0 start-0 w-100 h-100 rounded-4"
+              ></div>
+              <div
+                class="custom-card-glow position-absolute top-0 start-0 w-100 h-100 rounded-4"
+              ></div>
+
+              <div class="position-relative">
+                <div class="custom-card-icon display-6 mb-3">⚡</div>
+                <h3 class="custom-card-title h5 fw-bold text-white mb-2">
+                  Lightning Speed
+                </h3>
+                <p class="custom-card-description text-light mb-0">
+                  Experience instant results with our fast AI technology,
+                  generating deepnude images in mere seconds.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-lg-0 mt-3">
+            <div
+              class="custom-card-container position-relative p-4 rounded-4 text-white"
+            >
+              <div
+                class="custom-card-overlay position-absolute top-0 start-0 w-100 h-100 rounded-4"
+              ></div>
+              <div
+                class="custom-card-glow position-absolute top-0 start-0 w-100 h-100 rounded-4"
+              ></div>
+
+              <div class="position-relative">
+                <div class="custom-card-icon display-6 mb-3">💰</div>
+                <h3 class="custom-card-title h5 fw-bold text-white mb-2">
+                  Cost-Effective
+                </h3>
+                <p class="custom-card-description text-light mb-0">
+                  Our affordable pricing plans make deepnude technology
+                  accessible to everyone.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-lg-0 mt-3">
+            <div
+              class="custom-card-container position-relative p-4 rounded-4 text-white"
+            >
+              <div
+                class="custom-card-overlay position-absolute top-0 start-0 w-100 h-100 rounded-4"
+              ></div>
+              <div
+                class="custom-card-glow position-absolute top-0 start-0 w-100 h-100 rounded-4"
+              ></div>
+
+              <div class="position-relative">
+                <div class="custom-card-icon display-6 mb-3">📈</div>
+                <h3 class="custom-card-title h5 fw-bold text-white mb-2">
+                  Scalable Solutions
+                </h3>
+                <p class="custom-card-description text-light mb-0">
+                  Whether you're an individual user or part of a large team, our
+                  deepnude service scales to meet all your needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Choose Your Plan -->
+    <section class="choose">
+      <div class="d-flex justify-content-center">
+        <span class="n8ked-badge">Simple Pricing</span>
+      </div>
+      <h2 class="n8ked-heading">Choose Your Plan</h2>
+      <p class="n8ked-subtext">No hidden fees. No subscriptions.</p>
+      <p class="n8ked-subtext">Pay only for what you use.</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mt-lg-0 mt-3">
+            <div class="custom-price-card-wrapper position-relative">
+  <div class="custom-price-card p-4 rounded-4 bg-dark backdrop-blur text-white position-relative z-1">
+    
+    <!-- Header -->
+    <div class="mb-4">
+      <h3 class="custom-card-title h2 fw-bold mb-2">Free</h3>
+      <div class="d-flex align-items-baseline gap-2">
+        <span class="h1 fw-bold">Free</span>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <ul class="custom-feature-list list-unstyled mb-4">
+      <li class="d-flex align-items-center gap-2 text-light mb-4">
+        <span class="fs-5">🙂</span> <span>Medium Quality</span>
+      </li>
+      <li class="d-flex align-items-center gap-2 text-light mb-4">
+        <span class="fs-5">😞</span> <span>Watermarks</span>
+      </li>
+      <li class="d-flex align-items-center gap-2 text-light mb-4">
+        <span class="fs-5">⏳</span> <span>Slow Queue</span>
+      </li>
+      <li class="d-flex align-items-center gap-2 text-light mb-4">
+        <span class="fs-5">🔄</span> <span>3 Free Credits</span>
+      </li>
+    </ul>
+
+    <!-- CTA Button -->
+    <div class="text-center">
+      <a href="https://use.n8ked.app/register" class="custom-cta-btn d-block w-100 py-3 px-4 rounded-pill fw-bold text-white text-decoration-none">
+        Start Free
+      </a>
+
+          </div>
+        </div>
+      </div>
+          </div>
+          <div class="col-md-4 mt-lg-0 mt-3">
+            <div class="pro-card-wrapper position-relative">
+  <!-- Main Card -->
+  <div class="pro-card-body position-relative p-4 rounded-4 text-white z-2">
+    
+    <!-- Most Popular Badge -->
+    <div class="pro-card-badge position-absolute top-0 end-0 mt-n2 me-3 px-3 py-1 bg-white text-primary small fw-semibold rounded-pill shadow">
+      Most Popular
+    </div>
+
+    <!-- Header -->
+    <div class="mb-4">
+      <h3 class="h2 fw-bold mb-2">Pro</h3>
+      <div class="d-flex align-items-baseline gap-2">
+        <span class="h1 fw-bold">$0.20</span>
+        <span class=" fs-5">per image</span>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <ul class="pro-feature-list list-unstyled mb-4">
+      <li class="d-flex align-items-center gap-2 text-light mb-4">
+        <span class="fs-5">😍</span> <span>Excellent Quality</span>
+      </li>
+      <li class="d-flex align-items-center gap-2 text-light mb-4">
+        <span class="fs-5">👀</span> <span>No Watermarks</span>
+      </li>
+      <li class="d-flex align-items-center gap-2 text-light mb-4">
+        <span class="fs-5">⚡️</span> <span>Fast Queue</span>
+      </li>
+      <li class="d-flex align-items-center gap-2 text-light mb-4">
+        <span class="fs-5">🎯</span> <span>Priority Support</span>
+      </li>
+    </ul>
+
+    <!-- CTA Button -->
+    <div class="text-center">
+      <a href="https://use.n8ked.app/register" class="pro-btn d-block w-100 py-3 px-4 rounded-pill fw-bold text-white text-decoration-none">
+        Go Pro
+      </a>
+    </div>
+  </div>
+
+  <!-- Glow Background Effect -->
+  <div class="pro-card-glow position-absolute top-0 start-0 w-100 h-100 rounded-4"></div>
+</div>
+
+          </div>
+            <div class="col-md-4 mt-lg-0 mt-3">
+            <div class="custom-price-card-wrapper position-relative">
+  <div class="custom-price-card p-4 rounded-4 bg-dark backdrop-blur text-white position-relative z-1">
+    
+    <!-- Header -->
+    <div class="mb-4">
+      <h3 class="custom-card-title h2 fw-bold mb-2">API</h3>
+      <div class="d-flex align-items-baseline gap-2">
+        <span class="h1 fw-bold">$0.10</span>
+         <span class=" fs-5">per image</span>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <ul class="custom-feature-list list-unstyled mb-4">
+      <li class="d-flex align-items-center gap-2 text-light mb-4">
+        <span class="fs-5">😍</span> <span>Excellent Quality</span>
+      </li>
+      <li class="d-flex align-items-center gap-2 text-light mb-4">
+        <span class="fs-5">👀
+</span> <span>
+No Watermarks</span>
+      </li>
+      <li class="d-flex align-items-center gap-2 text-light mb-4">
+        <span class="fs-5">⚡️</span> <span>Fast Queue
+</span>
+      </li>
+      <li class="d-flex align-items-center gap-2 text-light mb-4">
+        <span class="fs-5">💰
+</span> <span>Cheapest Option
+</span>
+      </li>
+    </ul>
+
+    <!-- CTA Button -->
+    <div class="text-center">
+      <a href="https://use.n8ked.app/register" class="custom-cta-btn d-block w-100 py-3 px-4 rounded-pill fw-bold text-white text-decoration-none">
+        Get API Access
+      </a>
+
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- FAQs  -->
+
+    <section class="faqs-section">
+      
+<h2 class="display-5 fw-bold text-center text-white mb-4">
+  FAQs
+</h2>
+<p class="fs-5 text-center mb-5" style="color: #d1d5db;">
+  Questions about N8ked? Here are the answers!
+</p>
+
+<div class="container">
+  <div class="mx-auto" style="max-width: 768px;">
+    <div class="mb-5">
+      <div class="border-bottom pb-4 mb-4" style="border-color: #374151;">
+        <h3 class="h5 fw-semibold text-white mb-2">Is N8ked Free?</h3>
+        <p class="text-secondary">
+          N8ked operates on a freemium model, allowing you to experiment with the free version and offering 3 PRO credits to test our PRO features. We do not charge recurring subscriptions; instead, you only pay for the credits you want as a one-time payment.
+        </p>
+      </div>
+
+      <div class="border-bottom pb-4 mb-4" style="border-color: #374151;">
+        <h3 class="h5 fw-semibold text-white mb-2">How does N8ked work?</h3>
+        <p class="text-secondary">
+          N8ked uses AI and computer vision to automatically create nude images without the need for manual brushing over clothes. Our proprietary technology delivers superior results faster than our competitors.
+        </p>
+      </div>
+
+      <div class="border-bottom pb-4 mb-4" style="border-color: #374151;">
+        <h3 class="h5 fw-semibold text-white mb-2">Are my images stored?</h3>
+        <p class="text-secondary">
+          No, we only process the images for the DeepNude process and promptly delete all data afterward, ensuring your images remain secure and breach-resistant. Additionally, we use anonymization techniques to guarantee that the images you generate cannot be traced back to you in any way.
+        </p>
+      </div>
+
+      <div class="border-bottom pb-4" style="border-color: #374151;">
+        <h3 class="h5 fw-semibold text-white mb-2">What are the differences between free, pro and API?</h3>
+        <p class="text-secondary">
+          The Free version offers generation with certain limitations to prevent abuse, such as a single queue for all free users, watermarks, and lower quality outputs to ensure reasonable generation times. The PRO version provides access to non-watermarked deepnudes with high resolution and a much faster queue. The API is designed for developers. With API credits, you can build your own N8ked service and utilize our deepnude technology at half the price per image.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </section>
+
+
+    <!-- Footer section   -->
+
+
+    <section class="footer-section">
+      
+        <!-- Quick Links & Popular Services Section -->
+<div class="container text-sm text-secondary">
+  <!-- Quick Links -->
+  <div class="row border-bottom  pb-4 mb-4" style="border-color: #1f2937;">
+  <!-- Heading -->
+  <div class="col-12 col-md-auto mb-2 mb-md-0">
+    <h4 class="text-white fw-medium mb-0">Quick Links</h4>
+  </div>
+
+  <!-- Links -->
+  <div class="col d-flex align-content-center flex-wrap gap-2 gap-md-4">
+    <a href="" class="text-decoration-none text-secondary hover-primary">Terms</a>
+    <a href="" class="text-decoration-none text-secondary hover-primary">Privacy</a>
+    <a href="mailto:hey@n8ked.app" class="text-decoration-none text-secondary hover-primary">Contact</a>
+  </div>
+</div>
+
+
+  <!-- Popular Services -->
+  <div class="mb-4">
+    <h4 class="text-white fw-medium mb-2">Popular Services</h4>
+    <div class="row row-cols-2 g-2">
+      <div class="col">
+        <a href="/celebrity-nudes" class="text-decoration-none text-secondary hover-primary">Celebrity Nude Generator with N8ked AI</a>
+      </div>
+      <div class="col">
+        <a href="/ai-girlfriend" class="text-decoration-none text-secondary hover-primary">AI Girlfriend Creator with N8ked AI</a>
+      </div>
+      <div class="col">
+        <a href="/anime-ai-nude" class="text-decoration-none text-secondary hover-primary">Anime AI Nude Generator</a>
+      </div>
+      <div class="col">
+        <a href="/nudify-photos" class="text-decoration-none text-secondary hover-primary">Nudify Photos with N8ked AI</a>
+      </div>
+      <div class="col">
+        <a href="/bikini-to-nude" class="text-decoration-none text-secondary hover-primary">Bikini to Nude AI Generator</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center mb-4">
+    <p class="text-secondary mb-0">© 2025 N8ked. All rights reserved.</p>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="border-top pt-4 mt-4" style="border-color: #1f2937;">
+    <div class="text-secondary small">
+      <p>By entering this website you confirm to be 18+ to use this website. If you are under 18 please immediately leave this website.</p>
+      <p>You can't use photos of other people without their prior written permission.</p>
+      <p>You are solely responsible for the images you generate.</p>
+      <p>This website is created only for entertainment purposes and is not anyhow aimed to insult anyone.</p>
+      <p>This website does not support the creation of "deepfake" content.</p>
+      <p>The website is solely for the purpose of creating artificially generated adult content.</p>
+      <p>Deepfake content is strictly prohibited as well as being impossible to generate.</p>
+    </div>
+  </div>
+</div>
+
+    </section>
+
+    <script>
+      const imgBefore = document.getElementById("imgBefore");
+      const imgAfter = document.getElementById("imgAfter");
+      const scanLine22 = document.getElementById("scanBar");
+      const dotContainer = document.getElementById("dotContainer");
+
+      const imgBeforeSet = [
+        "./assets/images/clothes2.jpg",
+        "./assets/images/clothes3.jpg",
+      ];
+      const imgAfterSet = [
+        "./assets/images/nude2.webp",
+        "./assets/images/nude3.webp",
+      ];
+
+      let slideIndex = 0;
+      let directionForward = true;
+
+      function createDots() {
+        dotContainer.innerHTML = "";
+        imgBeforeSet.forEach((_, index) => {
+          const dot = document.createElement("div");
+          dot.classList.add("dot");
+          if (index === slideIndex) dot.classList.add("active");
+          dot.addEventListener("click", () => {
+            directionForward = index > slideIndex;
+            slideIndex = index;
+            updateSlide();
+          });
+          dotContainer.appendChild(dot);
+        });
+      }
+
+      function triggerScan(callback) {
+        let step = 0;
+        const totalSteps = 100;
+
+        function animateForward() {
+          step++;
+          if (step > totalSteps) {
+            setTimeout(() => animateBackward(), 300);
+            return;
+          }
+          const progress = step / totalSteps;
+          scanLine22.style.left = `${progress * 100}%`;
+          imgAfter.style.clipPath = `inset(0 ${100 - progress * 100}% 0 0)`;
+          requestAnimationFrame(animateForward);
+        }
+
+        function animateBackward() {
+          step--;
+          if (step < 0) {
+            slideIndex = (slideIndex + 1) % imgBeforeSet.length;
+            updateSlide();
+            return;
+          }
+          const progress = step / totalSteps;
+          scanLine22.style.left = `${progress * 100}%`;
+          imgAfter.style.clipPath = `inset(0 ${100 - progress * 100}% 0 0)`;
+          requestAnimationFrame(animateBackward);
+        }
+
+        animateForward();
+      }
+
+      function updateSlide() {
+        imgBefore.src = imgBeforeSet[slideIndex];
+        imgAfter.src = imgAfterSet[slideIndex];
+        imgAfter.style.clipPath = "inset(0 100% 0 0)";
+        createDots();
+        triggerScan();
+      }
+
+      function goPrev() {
+        directionForward = false;
+        slideIndex =
+          (slideIndex - 1 + imgBeforeSet.length) % imgBeforeSet.length;
+        updateSlide();
+      }
+
+      function goNext() {
+        directionForward = true;
+        slideIndex = (slideIndex + 1) % imgBeforeSet.length;
+        updateSlide();
+      }
+
+      createDots();
+      triggerScan();
+    </script>
+
+    <script>
+      const scanLine = document.getElementById("scanLine");
+      const afterImage = document.getElementById("afterImage");
+
+      function updateClipPath() {
+        const container = scanLine.parentElement;
+        const containerRect = container.getBoundingClientRect();
+        const scanRect = scanLine.getBoundingClientRect();
+
+        const percentage =
+          ((scanRect.left + scanRect.width / 2 - containerRect.left) /
+            containerRect.width) *
+          100;
+        const clamped = Math.max(0, Math.min(100, percentage));
+        afterImage.style.clipPath = `inset(0 ${100 - clamped}% 0 0)`;
+
+        requestAnimationFrame(updateClipPath);
+      }
+
+      requestAnimationFrame(updateClipPath);
+    </script>
+    <script>
+      const toggler = document.querySelector(".custom-toggler");
+
+      toggler.addEventListener("click", function () {
+        this.classList.toggle("active");
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
