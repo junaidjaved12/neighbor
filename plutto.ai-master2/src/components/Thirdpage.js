@@ -28,7 +28,7 @@ const ThirdPage = () => {
               images={projectData.images}
             />
             
-            <div className="mt-8 pl-32 space-y-2">
+            <div className="mt-8 space-y-2">
               <h3 className="text-white text-2xl font-light">Pallet ross</h3>
               <p className="text-gray-400 text-lg">A place to display your masterpiece</p>
             </div>
@@ -38,5 +38,6 @@ const ThirdPage = () => {
     </div>
   );
 };
+
 
 export default ThirdPage;
